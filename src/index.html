@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <title>SSD • TodoMVC</title>
+    <link rel="stylesheet" href="vendor/css/base.css">
+    <link rel="stylesheet" href="vendor/css/index.css">
+    <style id="hashStyle"></style>
+  </head>
+  <body onhashchange="route()">
+    <section class="todoapp">
+      <header class="header">
+        <h1>todo</h1>
+        <input class="new-todo" placeholder="Ne yapcan?" onkeydown="addTodo(event)" autofocus>
+      </header>
+      <section class="main">
+        <input class="toggle-all" type="checkbox" onchange="toggleAll()">
+        <label for="toggle-all">Hepsi Yapıldı</label>
+        <ul class="todo-list" id="todo-list"></ul>
+      </section>
+      <footer class="footer">
+        <span class="todo-count"></span>
+        <ul class="filters">
+          <li>
+            <a href="#/">Tümü</a>
+          </li>
+          <li>
+            <a href="#/active">Aktif</a>
+          </li>
+          <li>
+            <a href="#/completed">Bitmiş</a>
+          </li>
+        </ul>
+        <button class="clear-completed" onclick="removeAll()">Bitenleri Sil</button>
+      </footer>
+    </section>
+    <footer class="info">
+      <p>Düzenlemek istediğinize çift tıklayın</p>
+      <p>Geliştiren: <a href="http://github.com/ssd90">Salih S. Demir</a></p>
+      <p><a href="http://todomvc.com">TodoMVC</a></p>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>

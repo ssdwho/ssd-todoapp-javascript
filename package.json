@@ -1,0 +1,26 @@
+{
+  "name": "ssd-todoapp-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ssd90",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0"
+  },
+  "dependencies": {
+    "todomvc-app-css": "^2.0.6",
+    "todomvc-common": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ssd90/ssd-todoapp-javascript.git"
+  },
+}
